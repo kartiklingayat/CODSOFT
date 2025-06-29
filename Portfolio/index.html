@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartik Lingayat - Personal Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <!-- Logo and Text Container -->
+                <div class="logo-container">
+                    <span class="site-logo-text">Kartik</span>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class='bx bx-x' onclick="closemenu()"></i>
+                </ul>
+                <i class='bx bx-menu' onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Student/Cloud Developer</p>
+                <h1>Hi, I'm <span>Kartik</span><br>Lingayat,<br>Cloud Developer</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.png.jpg" alt="Kartik Lingayat">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am a passionate cloud developer currently studying cloud computing at
+                        MIT World Peace University. My journey in the world of technology started
+                        at a young age, and I've been fascinated by the possibilities it offers ever since.
+                        Throughout my academic career, I have gained valuable insights into cloud computing and
+                        its practical applications. I believe that cloud technology is shaping the future of IT,
+                        and I am committed to staying at the forefront of this field.
+                    </p>
+
+                    <!-- Skills, Experience, Education Tabs -->
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <!-- Skills Content -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML, CSS, JAVASCRIPT</span><br>Developing Websites</li>
+                            <li><span>C-Programming</span><br>Application Development</li>
+                            <li><span>Java Development</span><br>Building Robust Applications</li>
+                            <li><span>Cloud Development</span><br>Creating & Maintaining Cloud Systems (AWS, Microsoft Azure, Google Cloud)</li>
+                            <li><span>Cloud Security</span><br>Implementing and Managing Cloud Security Measures</li>
+                            <li><span>App Development</span><br>Building Android/iOS Apps</li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience Content -->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - 2025</span><br>Cloud Developer</li>
+                            <li><span>2022 - 2023</span><br>Developing Apps and Websites</li>
+                            <li><span>2020 - Current</span><br>Creating Websites</li>
+                        </ul>
+                    </div>
+
+                    <!-- Education Content -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2025</span><br>Honor Degree in Cloud Computing from MIT World Peace University</li>
+                            <li><span>2023 - Present</span><br>Currently studying Cloud Computing at MIT World Peace University.</li>
+                            <li><span>2020</span><br>IT (Information Technology) from MMCC.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class='bx bx-cloud-upload'></i>
+                    <h2>Cloud Development</h2>
+                    <p>
+                        Cloud computing is the on-demand delivery of IT resources over the Internet with pay-as-you-go pricing.
+                    </p>
+                    <a href="https://cloud.google.com/learn/certification/cloud-developer" target="_blank">Learn more</a>
+                </div>
+                <div>
+                    <i class='bx bx-laptop'></i>
+                    <h2>Web Development</h2>
+                    <p>
+                        A web developer is a programmer who develops World Wide Web applications using a client–server model.
+                    </p>
+                    <a href="https://www.computerscience.org/careers/web-developer/" target="_blank">Learn more</a>
+                </div>
+                <div>
+                    <i class='bx bx-signal-5'></i>
+                    <h2>Artificial Intelligence</h2>
+                    <p>
+                        Artificial Intelligence (AI) is the intelligence of machines or software.
+                    </p>
+                    <a href="https://en.wikipedia.org/wiki/Artificial_intelligence" target="_blank">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Project</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="Music Player Project">
+                    <div class="layer">
+                        <h3>Music Player</h3>
+                        <a href="https://kartiklingayat.github.io/Music---Player/" target="_blank"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="Weather App Project">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <a href="https://kartiklingayat.github.io/KartikWeatherApp/" target="_blank"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="Age Calculator Project">
+                    <div class="layer">
+                        <h3>Age Calculator</h3>
+                        <a href="https://kartiklingayat.github.io/Age-Calculator-App/" target="_blank"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://kartiklingayat.github.io/Flappy-Bird-Game/" class="btn" target="_blank">See More</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class='bx bx-send'></i> kartiklingayat019@gmail.com</p>
+                    <p><i class='bx bxs-phone-call'></i> 9322518815</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/kartik.lingayat.3" target="_blank"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://x.com/KartikLingayat?t=RMjnvtAoR_BAKKS3pIyl6w&s=08" target="_blank"><i class='bx bxl-twitter'></i></a>
+                        <a href="https://instagram.com/hardinscott__ft/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://www.linkedin.com/in/kartik-lingayat-36a627286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                    <a href="CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="copyright">
+        <div class="container">
+            <p>Designed and Developed by Kartik Lingayat <i class='bx bxs-heart'></i></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
