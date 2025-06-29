@@ -1,5 +1,5 @@
 # CODSOFT
-🚀 Level 1 Tasks Completed – Web Development Internship (CODSFT)
+🚀 Level 1 Tasks Completed – Web Development Internship (CODSOFT)
 
 ✅ Task 1: Created a responsive Landing Page using HTML & CSS, focusing on layout, sections, and design creativity.
 
